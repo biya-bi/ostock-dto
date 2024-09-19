@@ -2,12 +2,16 @@ package com.optimagrowth.dto;
 
 import org.springframework.hateoas.RepresentationModel;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class OrganizationDto extends RepresentationModel<OrganizationDto> {
-    private final String name;
-    private final String contactName;
-    private final String contactEmail;
-    private final String contactPhone;
+    private String name;
+    private String contactName;
+    private String contactEmail;
+    private String contactPhone;
 }

@@ -2,12 +2,16 @@ package com.optimagrowth.dto;
 
 import org.springframework.hateoas.RepresentationModel;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class LicenseDto extends RepresentationModel<LicenseDto> {
-    private final String description;
-    private final String productName;
-    private final String licenseType;
-    private final String comment;
+    private String description;
+    private String productName;
+    private String licenseType;
+    private String comment;
 }
