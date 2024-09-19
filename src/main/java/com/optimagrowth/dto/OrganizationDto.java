@@ -1,4 +1,4 @@
-package com.optimagrowth.organization.model;
+package com.optimagrowth.dto;
 
 import org.springframework.hateoas.RepresentationModel;
 

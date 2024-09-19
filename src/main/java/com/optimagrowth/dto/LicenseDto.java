@@ -1,4 +1,4 @@
-package com.optimagrowth.license.dto;
+package com.optimagrowth.dto;
 
 import org.springframework.hateoas.RepresentationModel;
 
