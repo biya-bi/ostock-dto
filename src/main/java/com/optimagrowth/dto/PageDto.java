@@ -2,17 +2,15 @@ package com.optimagrowth.dto;
 
 import org.springframework.hateoas.CollectionModel;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@EqualsAndHashCode(callSuper=true)
 public class PageDto<T> extends CollectionModel<T> {
-    private int number;
-    private int size;
-    private int totalPages;
+    private final int number;
+    private final int size;
+    private final int totalPages;
 
     public PageDto(Iterable<T> content, int number, int size, int totalPages) {
         super(content);
