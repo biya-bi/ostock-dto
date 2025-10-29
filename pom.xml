@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.nguiland</groupId>
-		<artifactId>lib-parent</artifactId>
+		<artifactId>nguiland-dependencies</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
@@ -14,14 +14,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dto</name>
 	<description>Data Transfer objects</description>
-	<properties>
-		<spring-boot.version>3.2.5</spring-boot.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
-			<version>${spring-boot.version}</version>
 		</dependency>
 
 		<dependency>
